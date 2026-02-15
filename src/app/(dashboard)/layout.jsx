@@ -16,7 +16,7 @@ export default function DashboardLayout({ children }) {
         <div className="bg-white h-screen rounded-bl-3xl rounded-tl-3xl shadow-sm overflow-hidden flex">
           <div className="flex-1 flex rounded-tl-xl flex-col overflow-hidden">
             <Navbar onToggleSidebar={() => setMobileOpen((v) => !v)} />
-            <main className="flex-1 p-4 overflow-y-auto">{children}</main>
+            <main className="flex-1 sm:p-[28px] p-[20px] overflow-y-auto">{children}</main>
           </div>
         </div>
       </div>

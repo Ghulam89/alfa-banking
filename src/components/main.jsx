@@ -11,15 +11,17 @@ import card2 from '../assets/images/card2.png';
 import TransferFooter from './footer';
 import check from '../assets/images/icon/check.png';
 import alfa from '../assets/images/icon/Alfa.png';
+import support from '../assets/images/icon/support.png';
+import lock from '../assets/images/icon/lock-open.png';
 function FromToCard() {
   return (
-    <div className="space-y-4 bg-[#E9F2EC] rounded-[16px] p-6 mb-6 border border-[#D9D9D9]">
-      <div className="bg-[#00413D] rounded-lg p-6 text-white mb-6">
+    <div className="space-y-4 bg-[#ECF4E9] rounded-[16px] p-[8px] mb-6">
+      <div className="bg-[#00413D] h-[104px] rounded-lg p-6 text-white mb-6">
         <div className="flex items-center justify-center gap-3 mb-2">
           <Image src={transfer} width={40} height={40} alt="amount" />
           <span className="text-4xl font-bold">£250.00</span>
         </div>
-        <p className="text-center text-teal-100 text-sm">Transfer Amount</p>
+        <p className="text-center text-white text-sm">Transfer Amount</p>
       </div>
       <div className="flex">
         <div className="w-5 flex flex-col items-center">
@@ -27,8 +29,8 @@ function FromToCard() {
           <div className="flex-1 border-l-2 border-dashed border-teal-900/50 my-1" />
           <span className="w-2 h-2 bg-teal-900 rounded-full" />
         </div>
-        <div className="flex-1">
-          <div>
+        <div className="flex-1 px-[16px]">
+          <div className=''>
             <div className="flex justify-between items-start">
               <div className="flex gap-3 items-center">
                 <div>
@@ -46,7 +48,7 @@ function FromToCard() {
               </div>
             </div>
 
-            <div className="mt-4">
+            <div className=" pt-[32px]">
               <p className="text-sm text-[#6B7271]">To</p>
               <div className="flex items-center gap-3 justify-between">
                 <Image src={profile} width={40} height={40} alt="recipient" className="rounded-full" />
@@ -64,7 +66,7 @@ function FromToCard() {
 
         </div>
       </div>
-      <div className="pl-5">
+      <div className="pl-5 pb-[16px] pt-4">
         <p className="text-sm font-semibold text-gray-800 mb-1">Note</p>
         <p className="text-sm text-gray-700">Dinner Split from last weekend</p>
       </div>
@@ -75,25 +77,25 @@ function FromToCard() {
 function FeeBreakdownCard() {
   return (
     <div className="bg-white rounded-[16px] p-6 border border-[#E5E6E6]">
-      <p className="text-teal-900 font-bold mb-3">Fee Breakdown</p>
-      <div className="border-t border-[#E5E6E6] mb-4" />
-      <div className="space-y-3 text-sm">
+      <p className="text-[#00413D] text-[20px] font-heading font-semibold mb-3">Fee Breakdown</p>
+      <div className="border-t border-[#D9D9D9] mb-4" />
+      <div className="space-y-3 text-sm font-heading">
         <div className="flex justify-between">
-          <span className="text-gray-700">Transfer Amount</span>
-          <span className="font-semibold text-teal-900">£250.00</span>
+          <span className="text-[#242E2C]">Transfer Amount</span>
+          <span className="font-semibold text-[16px] text-[#242E2C]">£250.00</span>
         </div>
         <div className="flex justify-between">
-          <span className="text-gray-700">Transfer Fee</span>
-          <span className="font-semibold text-teal-900">Free</span>
+          <span className="text-[#242E2C]">Transfer Fee</span>
+          <span className="font-semibold text-[16px] text-[#242E2C]">Free</span>
         </div>
         <div className="flex justify-between">
-          <span className="text-gray-700">Exchange Fee</span>
-          <span className="font-semibold text-teal-900">£0.00</span>
+          <span className="text-[#242E2C]">Exchange Fee</span>
+          <span className="font-semibold text-[16px] text-[#242E2C]">£0.00</span>
         </div>
-        <div className="border-t border-dashed border-[#E5E6E6]" />
+        <div className="border-t border-dashed border-[#D9D9D9]" />
         <div className="pt-1 flex justify-between items-center">
-          <span className="font-semibold text-gray-900">Total Amount</span>
-          <span className="font-bold text-teal-900 bg-[#E3F0E6] rounded-md px-3 py-1">
+          <span className="font-semibold  text-[#242E2C]">Total Amount</span>
+          <span className="font-bold text-[#242E2C] text-[16px] bg-secondaryLight rounded-lg px-3 py-1">
             £250.00
           </span>
         </div>
@@ -105,24 +107,24 @@ function FeeBreakdownCard() {
 function TransferInformationCard() {
   return (
     <div className="bg-white rounded-[16px] p-6 border border-[#E5E6E6]">
-      <p className="text-teal-900 font-bold mb-3">Transfer Information</p>
-      <div className="border-t border-[#E5E6E6] mb-4" />
-      <div className="space-y-3 text-sm">
+      <p className="text-[#00413D] text-[20px] font-heading font-semibold mb-3">Transfer Information</p>
+      <div className="border-t border-[#D9D9D9] mb-4" />
+      <div className="space-y-3 text-sm font-heading">
         <div className="flex justify-between">
-          <span className="text-gray-700">Transfer Type</span>
-          <span className="font-semibold text-teal-900">Instant Transfer</span>
+          <span className="text-[#242E2C]">Transfer Type</span>
+          <span className="font-semibold text-[16px] text-[#242E2C]">Instant Transfer</span>
         </div>
         <div className="flex justify-between">
-          <span className="text-gray-700">Estimated Arrival</span>
-          <span className="font-semibold text-teal-900">Instant</span>
+          <span className="text-[#242E2C]">Estimated Arrival</span>
+          <span className="font-semibold text-[16px] text-[#242E2C]">Instant</span>
         </div>
         <div className="flex justify-between">
-          <span className="text-gray-700">Reference Number</span>
-          <span className="font-semibold text-teal-900">TRF-2024-00123</span>
+          <span className="text-[#242E2C]">Reference Number</span>
+          <span className="font-semibold  text-[16px] text-[#242E2C]">TRF-2024-00123</span>
         </div>
         <div className="flex justify-between">
-          <span className="text-gray-700">Date & Time</span>
-          <span className="font-semibold text-teal-900">Today, 3:45 PM</span>
+          <span className="text-[#242E2C]">Date & Time</span>
+          <span className="font-semibold text-[16px] text-[#242E2C]">Today, 3:45 PM</span>
         </div>
       </div>
     </div>
@@ -131,7 +133,7 @@ function TransferInformationCard() {
 
 function SecurityVerificationCard({ onConfirm }) {
   return (
-    <div className="bg-[#E9F2EC] rounded-[16px]  mb-8 p-6 border border-[#D9D9D9]">
+    <div className="bg-[#ECF4E9] rounded-[16px]  mb-8 p-6 ">
       <div className="flex items-center gap-3 mb-2">
         <ArrowLeft size={18} className="text-teal-900" />
         <h2 className="text-2xl font-bold text-teal-900">Security Verification</h2>
@@ -144,7 +146,7 @@ function SecurityVerificationCard({ onConfirm }) {
         SMS/TPIN Verification
       </label>
       <div className="flex items-center rounded-[12px] border-2 border-teal-900 bg-white px-4 py-3">
-        <Lock size={18} className="text-teal-900 mr-3" />
+       <Image src={lock} alt='' className='mr-2' />
         <input
           type="text"
           placeholder="SMS/TPIN Verification"
@@ -176,34 +178,34 @@ function SecurityVerificationCard({ onConfirm }) {
 
 function RecipientDetailsCard() {
   return (
-    <div className="bg-white rounded-[16px] p-4 border border-[#D9D9D9]">
-      <div className="flex items-center justify-between mb-3">
-        <h2 className="text-lg font-bold text-teal-900">Recipient Details</h2>
-      </div>
-      <div className="space-y-4 bg-lightGreen p-4 rounded-[16px]">
-        <div className="flex items-center gap-3 pb-4 border-b">
+    <div className="bg-white rounded-[16px] p-[16px] border border-[#D9D9D9]">
+            <h2 className="text-lg font-bold text-gray-900 mb-3">Recipient Details</h2>
+
+      <div className="space-y-4 bg-lightGreen p-4 rounded-[16px] font-heading">
+        <div className="flex items-center gap-3 pb-3 border-b border-[#D9D9D9]">
           <Image src={profile} width={40} height={40} alt="recipient" className="rounded-full" />
           <div>
-            <p className="font-bold text-teal-900">John Smith</p>
-            <p className="text-xs text-gray-600">@John Smith</p>
+            <p className="font-bold text-[#242E2C]">John Smith</p>
+            <p className="text-sm text-[#6B7271]">@John Smith</p>
           </div>
         </div>
-        <div>
-          <p className="text-xs text-gray-600 font-semibold">Email</p>
-          <p className="text-sm text-teal-900 font-semibold">john.smith@alfamail.com</p>
+        <div className="space-y-2">
+          <p className="text-[#242E2C]">john.smith@alfamail.com</p>
+          <p className="text-[#242E2C]">+1 (555) 123-4567</p>
         </div>
-        <div>
-          <p className="text-xs text-gray-600 font-semibold">Phone</p>
-          <p className="text-sm text-teal-900 font-semibold">+1 (555) 123-4567</p>
-        </div>
-        <div className="grid grid-cols-2 gap-4 pt-4 border-t">
+        <div className="border-t border-[#D9D9D9]" />
+        <div className="pt-3 grid grid-cols-2 gap-4">
           <div>
-            <p className="text-xs text-gray-600 font-semibold">Member since</p>
-            <p className="text-sm font-bold text-teal-900">Jan 2023</p>
+            <p className="text-[#242E2C]">Member since</p>
+          </div>
+          <div className="text-right">
+            <p className="text-[#242E2C] font-semibold">Jan 2023</p>
           </div>
           <div>
-            <p className="text-xs text-gray-600 font-semibold">Total transfers</p>
-            <p className="text-sm font-bold text-teal-900">24 transfers</p>
+            <p className="text-[#242E2C]">Total transfers</p>
+          </div>
+          <div className="text-right">
+            <p className="text-[#242E2C] font-semibold">24 transfers</p>
           </div>
         </div>
       </div>
@@ -213,8 +215,8 @@ function RecipientDetailsCard() {
 
 function PreviousTransfersCard() {
   return (
-    <div className="bg-white rounded-[16px] p-4 border border-[#D9D9D9]">
-      <h2 className="text-lg font-bold text-gray-900 mb-3">Previous Transfers To John</h2>
+    <div className="bg-white rounded-[16px] p-[16px] border border-[#D9D9D9]">
+      <h2 className="text-lg font-bold text-grayBlack mb-3">Previous Transfers To John</h2>
       <div className="space-y-3">
         {[
           { amount: '£150.00', date: 'Dec 18, 2024', status: 'Successful' },
@@ -226,10 +228,10 @@ function PreviousTransfersCard() {
             className="rounded-[12px] border border-[#E5E6E6] bg-[#FBFBFC] px-4 py-3 flex justify-between items-center"
           >
             <div>
-              <p className="font-semibold text-teal-900">{item.amount}</p>
-              <p className="text-xs text-gray-600">{item.date}</p>
+              <p className="font-semibold text-[#242E2C]">{item.amount}</p>
+              <p className="text-[11px] text-[#6B7271]">{item.date}</p>
             </div>
-            <span className="text-sm font-semibold text-green-700">
+            <span className="text-sm font-semibold text-primary">
               {item.status}
             </span>
           </div>
@@ -255,7 +257,7 @@ function NeedHelpCard() {
           Our support team is available 24/7 to assist you with your transfer.
         </p>
         <Button variant="success" size="md" className="mb-4 rounded-lg">
-          Contact Support
+       <Image src={support}  className=' mr-1' alt='' />   Contact Support
         </Button>
       </div>
       <div className="relative">
@@ -272,8 +274,8 @@ export default function TransferScreen() {
   const [verified, setVerified] = useState(false);
   return (
     <div className="">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2 space-y-6">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-5">
+        <div className="lg:col-span-3 space-y-7">
           <div className="bg-white rounded-xl  border border-[#D9D9D9] shadow-sm">
             <div className='p-2'>
               <FromToCard />
@@ -285,7 +287,7 @@ export default function TransferScreen() {
             </div>
           </div>
         </div>
-        <div className="space-y-6">
+        <div className="space-y-5">
           <RecipientDetailsCard />
           <PreviousTransfersCard />
           <NeedHelpCard />
